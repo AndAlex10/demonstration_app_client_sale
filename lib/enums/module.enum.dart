@@ -1,0 +1,8 @@
+
+enum ModuleEnum {
+  CART,
+  ESTABLISHMENT,
+  ADDRESS,
+  CONFIGURATION
+
+}

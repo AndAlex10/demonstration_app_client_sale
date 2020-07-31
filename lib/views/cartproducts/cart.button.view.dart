@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'package:venda_mais_client_buy/views/cartproducts/cart.view.dart';
+import 'package:venda_mais_client_buy/views/widgets/widgets.commons.dart';
+
+class CartButtonView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      child: Icon(Icons.shopping_cart, color: Colors.white),
+      onPressed: (){
+        Navigator.of(context).push(
+            MaterialPageRoute(builder: (context)=> CartView())
+        );
+      },
+      backgroundColor: WidgetsCommons.buttonColor()
+    );
+  }
+}
